@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TwitterKit/TwitterKit.h>
+#import <DigitsKit/DigitsKit.h>
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *authenticateButton;
+@property (weak, nonatomic) IBOutlet UIButton *logInButton;
 
 @end
 
