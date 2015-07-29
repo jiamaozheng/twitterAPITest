@@ -15,17 +15,19 @@
 		0CA54F9A5E6CD688BA79D795DA4531CE /* Pods-twitterAPITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-twitterAPITest.debug.xcconfig"; sourceTree = "<group>"; };
 		31B135DEA1F9C8159DD5C62A4BCEF4A0 /* libPods-twitterAPITest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-twitterAPITest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3745AC86C48BFA4E908E25C6DD2F1E35 /* Pods-twitterAPITest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-twitterAPITest-dummy.m"; sourceTree = "<group>"; };
-		69A6B570486AD3CEE8477B0CE0F73CB5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		5C63365E994BDEFFF8CBA41C4D2602E9 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		68E6A89D0E12BB3B3D487D9AEC38E3F9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		6C473FFD6DFF90A8401ECB2104B82E97 /* Pods-twitterAPITest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-twitterAPITest-acknowledgements.plist"; sourceTree = "<group>"; };
-		75FC3E5825E8141F590AE21830AF7DDA /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		79718C9D14D4DEE96B5BB71186301726 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		853836A96624520438DFBA65FF19F464 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		70DE95F0D7AAA43292EB10B5F397538A /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		7F38F9A5CB5E71A25F83BB732619DBF3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		8AD0AD140DA6C8626DE3A95EE37AA2D0 /* Pods-twitterAPITest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-twitterAPITest-resources.sh"; sourceTree = "<group>"; };
-		A7758308EE760248DF4F7BEC67E65D04 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		AB2A0E0E7788F15F7382EDBD1D9A5891 /* Pods-twitterAPITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-twitterAPITest.release.xcconfig"; sourceTree = "<group>"; };
 		C88113A79685B4EFEE7BAD12896829F7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CD129559C7EA7F2BDED7F60A0CCA500A /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		CF6CE89E9121D453C922B249B112F2AE /* DigitsKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		D982EA2E975DED73738FB9868ED3E8E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DACA1C5039BE0E3039921F51E4FC7E65 /* Pods-twitterAPITest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-twitterAPITest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F42E67F4E999EAF926B73A50BCFA65EB /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,10 +42,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04F3888F31107BAEA54903A7A05B7D70 /* Base */ = {
+		0154A659C77C7192E019DFCDC7B6D3F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4DB5D13E93A6D707C1EC2559739C472 /* Frameworks */,
+				7F38F9A5CB5E71A25F83BB732619DBF3 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C5375B909DBB208F996208BA314E64 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				3056F0FE517722EFE6CCBFF71C1F6973 /* Base */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		09E05B44F7ACC4414298A19BE7CD587D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FA260D662F1BAC5DD9EC955171A72E8 /* Crashlytics */,
+				854C054246E4F08C4C8F9D417D0F32B9 /* Digits */,
+				06C5375B909DBB208F996208BA314E64 /* Fabric */,
+				68934ADE9C481EE499F9EAB9095F8FD0 /* TwitterCore */,
+				97516C143913DF861739BA2487E55A0F /* TwitterKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1577BF272148FCA4AB9B8B1BA0B6B921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70DE95F0D7AAA43292EB10B5F397538A /* TwitterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3056F0FE517722EFE6CCBFF71C1F6973 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0154A659C77C7192E019DFCDC7B6D3F6 /* Frameworks */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -56,20 +94,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		3509CD66BEF323EA4E77A802BF87F9F7 /* Resources */ = {
+		3AC1283324D7D712EC32F0CA558374F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				853836A96624520438DFBA65FF19F464 /* TwitterKitResources.bundle */,
+				CD129559C7EA7F2BDED7F60A0CCA500A /* TwitterKitResources.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		3A75078B303475B1257D4E924218E9E6 /* TwitterCore */ = {
+		3D0B6D1B1F936FE1476CC8B41ABC3CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA4122D0CFAAACC7AF17A6C50CFBBC7A /* Frameworks */,
+				F42E67F4E999EAF926B73A50BCFA65EB /* TwitterCore.framework */,
 			);
-			path = TwitterCore;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */ = {
@@ -94,20 +132,12 @@
 			path = "Target Support Files/Pods-twitterAPITest";
 			sourceTree = "<group>";
 		};
-		7B7FDDF8EA79DAF40131B84A7FBCD87A /* Fabric */ = {
+		68934ADE9C481EE499F9EAB9095F8FD0 /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				04F3888F31107BAEA54903A7A05B7D70 /* Base */,
+				3D0B6D1B1F936FE1476CC8B41ABC3CF6 /* Frameworks */,
 			);
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		7CA88A975596722C35C4730EE38877A0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				75FC3E5825E8141F590AE21830AF7DDA /* TwitterKit.framework */,
-			);
-			name = Frameworks;
+			path = TwitterCore;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -115,7 +145,7 @@
 			children = (
 				C88113A79685B4EFEE7BAD12896829F7 /* Podfile */,
 				5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */,
-				EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */,
+				09E05B44F7ACC4414298A19BE7CD587D /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */,
 			);
@@ -129,13 +159,54 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B4FC176BD3FB3DEB7C89906025674693 /* TwitterKit */ = {
+		854C054246E4F08C4C8F9D417D0F32B9 /* Digits */ = {
 			isa = PBXGroup;
 			children = (
-				7CA88A975596722C35C4730EE38877A0 /* Frameworks */,
-				3509CD66BEF323EA4E77A802BF87F9F7 /* Resources */,
+				92E1B10DC15DB9911A5073181B46D8BA /* Frameworks */,
+				B3CC59834238599ADD5091283E97576D /* Resources */,
+			);
+			path = Digits;
+			sourceTree = "<group>";
+		};
+		8FA260D662F1BAC5DD9EC955171A72E8 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				CA9657F50A2349B66BC95BF667877AE6 /* Frameworks */,
+			);
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		92E1B10DC15DB9911A5073181B46D8BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C63365E994BDEFFF8CBA41C4D2602E9 /* DigitsKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97516C143913DF861739BA2487E55A0F /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				1577BF272148FCA4AB9B8B1BA0B6B921 /* Frameworks */,
+				3AC1283324D7D712EC32F0CA558374F0 /* Resources */,
 			);
 			path = TwitterKit;
+			sourceTree = "<group>";
+		};
+		B3CC59834238599ADD5091283E97576D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF6CE89E9121D453C922B249B112F2AE /* DigitsKitResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CA9657F50A2349B66BC95BF667877AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68E6A89D0E12BB3B3D487D9AEC38E3F9 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
@@ -144,49 +215,6 @@
 				31B135DEA1F9C8159DD5C62A4BCEF4A0 /* libPods-twitterAPITest.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D88EB7665968A1718BC80196586F8791 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				69A6B570486AD3CEE8477B0CE0F73CB5 /* Crashlytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD60A35968738A14C2CCF3FAA1D05C2E /* Crashlytics */ = {
-			isa = PBXGroup;
-			children = (
-				D88EB7665968A1718BC80196586F8791 /* Frameworks */,
-			);
-			path = Crashlytics;
-			sourceTree = "<group>";
-		};
-		EF447B4E1DFAE4F853BEEBB25E70B50E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD60A35968738A14C2CCF3FAA1D05C2E /* Crashlytics */,
-				7B7FDDF8EA79DAF40131B84A7FBCD87A /* Fabric */,
-				3A75078B303475B1257D4E924218E9E6 /* TwitterCore */,
-				B4FC176BD3FB3DEB7C89906025674693 /* TwitterKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F4DB5D13E93A6D707C1EC2559739C472 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				79718C9D14D4DEE96B5BB71186301726 /* Fabric.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA4122D0CFAAACC7AF17A6C50CFBBC7A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A7758308EE760248DF4F7BEC67E65D04 /* TwitterCore.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

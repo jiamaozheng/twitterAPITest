@@ -2,9 +2,13 @@
 # platform :ios, '6.0'
 
 target 'twitterAPITest' do
-pod 'TwitterKit' and pod 'TwitterCore'
+
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'TwitterKit'
+pod 'TwitterCore'
+pod 'Digits'
+
 end
 
 target 'twitterAPITestTests' do
