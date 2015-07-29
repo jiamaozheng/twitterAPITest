@@ -8,6 +8,7 @@ pod 'Crashlytics'
 pod 'TwitterKit'
 pod 'TwitterCore'
 pod 'Digits'
+pod 'IOSLinkedInAPI'
 
 end
 

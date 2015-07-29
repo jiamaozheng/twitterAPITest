@@ -15,6 +15,7 @@
 		1298BF781B690BA500982132 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1298BF771B690BA500982132 /* Images.xcassets */; };
 		1298BF7B1B690BA500982132 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1298BF791B690BA500982132 /* LaunchScreen.xib */; };
 		1298BF871B690BA500982132 /* twitterAPITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1298BF861B690BA500982132 /* twitterAPITestTests.m */; };
+		1298BFA61B6960E300982132 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1298BFA51B6960E300982132 /* linkedin-sdk.framework */; };
 		639C30C02F79A4B9ED46883E /* libPods-twitterAPITest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7E948A678AF44080D7B78C /* libPods-twitterAPITest.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		1298BF801B690BA500982132 /* twitterAPITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twitterAPITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1298BF851B690BA500982132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1298BF861B690BA500982132 /* twitterAPITestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitterAPITestTests.m; sourceTree = "<group>"; };
+		1298BFA51B6960E300982132 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
 		24A38A3A17AC0D132FE6ABBB /* Pods-twitterAPITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitterAPITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twitterAPITest/Pods-twitterAPITest.debug.xcconfig"; sourceTree = "<group>"; };
 		33A147EBDED3879755D037D5 /* Pods-twitterAPITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitterAPITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitterAPITest/Pods-twitterAPITest.release.xcconfig"; sourceTree = "<group>"; };
 		8A7E948A678AF44080D7B78C /* libPods-twitterAPITest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-twitterAPITest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639C30C02F79A4B9ED46883E /* libPods-twitterAPITest.a in Frameworks */,
+				1298BFA61B6960E300982132 /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +135,7 @@
 		424A74BEFDFC5070A16B492F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1298BFA51B6960E300982132 /* linkedin-sdk.framework */,
 				8A7E948A678AF44080D7B78C /* libPods-twitterAPITest.a */,
 			);
 			name = Frameworks;
@@ -427,6 +431,10 @@
 			baseConfigurationReference = 24A38A3A17AC0D132FE6ABBB /* Pods-twitterAPITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterAPITest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +446,10 @@
 			baseConfigurationReference = 33A147EBDED3879755D037D5 /* Pods-twitterAPITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterAPITest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

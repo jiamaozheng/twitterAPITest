@@ -11,6 +11,11 @@
 #import <Crashlytics/Crashlytics.h>
 #import <TwitterKit/TwitterKit.h>
 #import <DigitsKit/DigitsKit.h>
+#import <linkedin-sdk/LISDK.h>
+#import <LIALinkedInHttpClient.h>
+#import <LIALinkedInAuthorizationViewController.h>
+#import <LIALinkedInApplication.h>
+#import <NSString+LIAEncode.h>
 
 @interface AppDelegate ()
 
@@ -22,9 +27,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Fabric with:@[CrashlyticsKit, TwitterKit, DigitsKit]];
+    return [LIALinkedInHttpClient clientForApplication:application presentingViewController:nil];
 
-    
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -49,6 +53,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if ([LISDKCallbackHandler shouldHandleUrl:url]) {
+        return [LISDKCallbackHandler application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    }
+    return YES;
 }
 
 #pragma mark - Core Data stack

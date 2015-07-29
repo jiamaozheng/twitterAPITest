@@ -1,9 +1,32 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Crashlytics (3.1.0)
   - Digits (1.8.1)
   - Fabric (1.2.8):
     - Fabric/Base (= 1.2.8)
   - Fabric/Base (1.2.8)
+  - IOSLinkedInAPI (2.0.0):
+    - AFNetworking (>= 2.0.0)
   - TwitterCore (1.8.1)
   - TwitterKit (1.8.1)
 
@@ -11,13 +34,16 @@ DEPENDENCIES:
   - Crashlytics
   - Digits
   - Fabric
+  - IOSLinkedInAPI
   - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Crashlytics: ef9a58a4e806b316a1748c06432f6f847ba09ac6
   Digits: 9adab340cc457f21ca2dabfda522b58f2e5bd0a8
   Fabric: a9eabe53915e9f1db55a84dd2838737928675878
+  IOSLinkedInAPI: d0adc664472d471b0df9b2aad92a2d82de926c40
   TwitterCore: 0a26fb8054bc23d8986344d3dcb6602255b6aec5
   TwitterKit: 88daaebdb8bfb5847d76d8ae159841248427931d
 

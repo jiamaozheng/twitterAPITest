@@ -24,6 +24,16 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHi-XD-1Pe">
+                                <rect key="frame" x="11" y="244" width="221" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Linkedin ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectWithLinkedIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPk-IX-GNc"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-Ww-OOG">
                                 <rect key="frame" x="11" y="426" width="221" height="31"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,12 +48,13 @@
                     <navigationItem key="navigationItem" id="iUv-Fc-qUo"/>
                     <connections>
                         <outlet property="authenticateButton" destination="FPq-Ww-OOG" id="d6o-EZ-ScS"/>
+                        <outlet property="linkedin" destination="JHi-XD-1Pe" id="4ax-gh-NCe"/>
                         <outlet property="logInButton" destination="y3E-dw-ebk" id="LBY-Ez-HYC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="1090"/>
+            <point key="canvasLocation" x="941" y="1095"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6dK-57-aYC">
@@ -61,7 +72,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T7K-MZ-cR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="1090"/>
+            <point key="canvasLocation" x="178" y="1090"/>
         </scene>
     </scenes>
 </document>
