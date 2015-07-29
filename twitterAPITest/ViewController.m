@@ -44,21 +44,21 @@
     
     
     
-    BOOL validSession = [LISDKSessionManager hasValidSession];
-    if (validSession) {
-     NSLog(@"%s","success");
-    } else {
-    NSLog(@"%s","failed");
-//        self.linkedin.alpha = 0.0;
-    }
+//    BOOL validSession = [LISDKSessionManager hasValidSession];
+//    if (validSession) {
+//     NSLog(@"%s","success");
+//    } else {
+//    NSLog(@"%s","failed");
+////        self.linkedin.alpha = 0.0;
+//    }
 
     
     
     LIALinkedInApplication *application = [LIALinkedInApplication applicationWithRedirectURL:@"http://www.google.com"
-                                                                                    clientId:@"w57zqiw6cv73"
-                                                                                clientSecret:@"Pj5MVxtkpbefau1v"
+                                                                                    clientId:@"779a64xovfn1vi"
+                                                                                clientSecret:@"KKxvB7vJyOsjlLqq"
                                                                                        state:@"something"
-                                                                               grantedAccess:@[@"r_fullprofile", @"r_network"]];
+                                                                               grantedAccess:@[@"r_basicprofile", @"r_emailaddress"]];
     self.client = [LIALinkedInHttpClient clientForApplication:application presentingViewController:nil];
 
     
@@ -105,6 +105,7 @@
 - (void)requestMeWithToken:(NSString *)accessToken {
     [self.client GET:[NSString stringWithFormat:@"https://api.linkedin.com/v1/people/~?oauth2_access_token=%@&format=json", accessToken] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *result) {
         NSLog(@"current user %@", result);
+        self.linkedin.alpha = 0;
     }        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"failed to fetch current user %@", error);
     }];
