@@ -21,6 +21,7 @@
     TWTRLogInButton* logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession* session, NSError* error) {
         if (session) {
             NSLog(@"signed in as %@", [session userName]);
+  
         } else {
             NSLog(@"error: %@", [error localizedDescription]);
         }
@@ -33,6 +34,7 @@
     DGTAuthenticateButton *authenticateButton = [DGTAuthenticateButton buttonWithAuthenticationCompletion:^(DGTSession *session, NSError *error) {
         if (session) {
             NSLog(@"signed in as %@", [session phoneNumber]);
+  
         } else {
             NSLog(@"error: %@", [error localizedDescription]);
         }
